@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require_relative '../system/boot'
+
+module CLI
+  module Commands
+    extend Dry::CLI::Registry
+
+    register "-v",  Feedback['commands.version']
+    register "start", Feedback['commands.start']
+  end
+end
+
+Dry::CLI.new(CLI::Commands).call

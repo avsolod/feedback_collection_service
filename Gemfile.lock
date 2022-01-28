@@ -1,0 +1,78 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    concurrent-ruby (1.1.9)
+    dry-auto_inject (0.8.0)
+      dry-container (>= 0.3.4)
+    dry-cli (0.7.0)
+    dry-configurable (0.14.0)
+      concurrent-ruby (~> 1.0)
+      dry-core (~> 0.6)
+    dry-container (0.9.0)
+      concurrent-ruby (~> 1.0)
+      dry-configurable (~> 0.13, >= 0.13.0)
+    dry-core (0.7.1)
+      concurrent-ruby (~> 1.0)
+    dry-events (0.3.0)
+      concurrent-ruby (~> 1.0)
+      dry-core (~> 0.5, >= 0.5)
+    dry-inflector (0.2.1)
+    dry-logic (1.2.0)
+      concurrent-ruby (~> 1.0)
+      dry-core (~> 0.5, >= 0.5)
+    dry-matcher (0.9.0)
+      dry-core (~> 0.4, >= 0.4.8)
+    dry-monads (1.4.0)
+      concurrent-ruby (~> 1.0)
+      dry-core (~> 0.7)
+    dry-struct (1.4.0)
+      dry-core (~> 0.5, >= 0.5)
+      dry-types (~> 1.5)
+      ice_nine (~> 0.11)
+    dry-system (0.22.0)
+      concurrent-ruby (~> 1.0)
+      dry-auto_inject (>= 0.4.0)
+      dry-configurable (~> 0.13, >= 0.13.0)
+      dry-container (~> 0.9, >= 0.9.0)
+      dry-core (~> 0.5, >= 0.5)
+      dry-inflector (~> 0.1, >= 0.1.2)
+      dry-struct (~> 1.0)
+    dry-transaction (0.13.3)
+      dry-container (>= 0.2.8)
+      dry-events (>= 0.1.0)
+      dry-matcher (>= 0.7.0)
+      dry-monads (>= 0.4.0)
+    dry-types (1.5.1)
+      concurrent-ruby (~> 1.0)
+      dry-container (~> 0.3)
+      dry-core (~> 0.5, >= 0.5)
+      dry-inflector (~> 0.1, >= 0.1.2)
+      dry-logic (~> 1.0, >= 1.0.2)
+    ffaker (2.20.0)
+    ice_nine (0.11.2)
+    pastel (0.8.0)
+      tty-color (~> 0.5)
+    tty-color (0.6.0)
+    tty-cursor (0.7.1)
+    tty-prompt (0.23.1)
+      pastel (~> 0.8)
+      tty-reader (~> 0.8)
+    tty-reader (0.9.0)
+      tty-cursor (~> 0.7)
+      tty-screen (~> 0.8)
+      wisper (~> 2.0)
+    tty-screen (0.8.1)
+    wisper (2.0.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  dry-cli
+  dry-system
+  dry-transaction
+  ffaker
+  tty-prompt
+
+BUNDLED WITH
+   2.1.4
